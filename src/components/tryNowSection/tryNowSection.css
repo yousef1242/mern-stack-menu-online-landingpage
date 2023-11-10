@@ -1,0 +1,17 @@
+.tryNow-section .form-group label{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    color: var(--gray);
+    font-weight: 600;
+}
+.tryNow-section .form-group{
+    margin-bottom: 15px;
+}
+.tryNow-section .form-group input{
+    width: 100%;
+    border: 1px solid var(--red);
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,11 @@
+.pricing-section{
+    background-color: #f4f6fc!important;
+}
+.pricing-section .month-plan{
+    background-color: var(--red);
+    color: #fff;
+}
+.pricing-section .year-plan{
+    background-color: var(--verygray);
+    color: #fff;
+}

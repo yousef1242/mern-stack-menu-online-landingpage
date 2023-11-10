@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+}
+:root {
+  --red: #f53838;
+  --gray: #2b2b2b;
+  --green: #2bbc28;
+  --verygray: #5a5a5a;
+  --normal: #000;
+}
+button {
+  color: #fff;
+  background-color: var(--red);
+  border-radius: 30px!important;
+  border: 0px;
+  outline: none;
+  padding: 10px 20px;
+}
+a{
+  text-decoration: none;
+}
+p{
+  color: var(--verygray);
+}
+h2,h3{
+  color: var(--gray);
+}
+h1{
+  color: var(--normal);
+}
