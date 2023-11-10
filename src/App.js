@@ -6,6 +6,7 @@ import FeaturesSection from "./components/featuresSection/FeaturesSection";
 import PricingSection from "./components/pricingSection/PricingSection";
 import FooterSection from "./components/footerSection/FooterSection";
 import TryNowSection from "./components/tryNowSection/TryNowSection";
+import UsefulSection from "./components/usefulSection/UsefulSection";
 
 function App() {
   const { lan } = useSelector((state) => state.language);
@@ -13,6 +14,7 @@ function App() {
     <div className="main" style={{ direction: lan === "er" ? "rtl" : "ltr" }}>
       <HeaderSection />
       <HeroSection />
+      <UsefulSection/>
       <FeaturesSection/>
       <PricingSection />
       <TryNowSection/>

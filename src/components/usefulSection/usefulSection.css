@@ -1,0 +1,17 @@
+.useful-section .span-icon {
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background-color: var(--red);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  /* text-align: center; */
+  font-size: 27px;
+  align-items: center;
+  justify-content: center;
+}
+.useful-section h4 {
+  display: flex;
+  justify-content: center;
+}
