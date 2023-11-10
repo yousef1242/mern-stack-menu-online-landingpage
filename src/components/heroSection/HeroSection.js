@@ -4,13 +4,21 @@ import { useSelector } from "react-redux";
 
 const HeroSection = () => {
   const { lan } = useSelector((state) => state.language);
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="Hero-section" id="homeSection">
         <div className="container">
           <div className="row align-items-start">
             <div className="col-12 col-sm-6">
-              <h1 className="mb-4">
+              <h1 className="mb-4 fw-bold">
                 {lan === "er"
                   ? "أسهل وأوفر طريقة لعمل منيو الكتروني مع باركود"
                   : "The easiest and most economical way to make an electronic menu with a barcode"}
@@ -20,7 +28,9 @@ const HeroSection = () => {
                   ? "مع ديش منيو يمكنك عمل منيو الكتروني مع باركود وايمكانية الطلب من خلاله"
                   : "With Dish Menu, you can create an electronic menu with a barcode and the ability to order from it"}
               </p>
-              <button>{lan === "er" ? "جرب الان" : "Try now"}</button>
+              <button onClick={() => scrollToSection("tryNowSection")}>
+                {lan === "er" ? "جرب الان" : "Try now"}
+              </button>
             </div>
             <div className="col-12 col-sm-6">
               <img
